@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginView" customModule="parleyclient_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="btnBiometricID" destination="xdO-Tc-GIc" id="Ket-Zk-j3E"/>
+                <outlet property="btnRegister" destination="WiK-GE-z5i" id="YZ2-r5-208"/>
+                <outlet property="btnSubmit" destination="21g-rd-RgP" id="hOS-8x-VuQ"/>
+                <outlet property="logo" destination="vbz-XZ-6kq" id="mYh-0G-gbB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="isotipo" translatesAutoresizingMaskIntoConstraints="NO" id="vbz-XZ-6kq">
+                    <rect key="frame" x="143" y="94" width="128" height="126"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21g-rd-RgP" userLabel="submit">
+                    <rect key="frame" x="25" y="739" width="364" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="xHv-B4-K1y"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <color key="tintColor" red="0.28627450980000002" green="0.30980392159999998" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Iniciar">
+                        <color key="titleColor" red="0.23529411764705882" green="0.24705882352941178" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="startLogin:" destination="-1" eventType="touchUpInside" id="60A-hA-5ng"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WiK-GE-z5i">
+                    <rect key="frame" x="122" y="814" width="170" height="30"/>
+                    <state key="normal" title="No soy yo, cerrar sesión.">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="logoutSession:" destination="-1" eventType="touchUpInside" id="9Z8-i5-GFk"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLt-Xa-ASM">
+                    <rect key="frame" x="165" y="488" width="84" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdO-Tc-GIc">
+                    <rect key="frame" x="172" y="539" width="70" height="70"/>
+                    <state key="normal" image="biometridID"/>
+                    <connections>
+                        <action selector="loginWithBiometricID:" destination="-1" eventType="touchUpInside" id="t5x-kz-puf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.33725490196078434" green="0.3529411764705882" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="21g-rd-RgP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="7la-0Q-YcL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="21g-rd-RgP" secondAttribute="trailing" constant="25" id="Op8-ke-LZh"/>
+                <constraint firstItem="xdO-Tc-GIc" firstAttribute="top" secondItem="OLt-Xa-ASM" secondAttribute="bottom" constant="30" id="XI9-aq-b0m"/>
+                <constraint firstItem="21g-rd-RgP" firstAttribute="top" secondItem="xdO-Tc-GIc" secondAttribute="bottom" constant="130" id="dfW-3K-MP4"/>
+                <constraint firstItem="vbz-XZ-6kq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="hzo-b2-IG9"/>
+                <constraint firstItem="WiK-GE-z5i" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lnF-QM-3Mn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="WiK-GE-z5i" secondAttribute="bottom" constant="18" id="nzV-93-WZW"/>
+                <constraint firstItem="OLt-Xa-ASM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rFF-ou-YDV"/>
+                <constraint firstItem="vbz-XZ-6kq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tKf-8h-bMn"/>
+                <constraint firstItem="WiK-GE-z5i" firstAttribute="top" secondItem="21g-rd-RgP" secondAttribute="bottom" constant="15" id="uT7-cG-qkt"/>
+                <constraint firstItem="xdO-Tc-GIc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vPS-Vf-zoz"/>
+            </constraints>
+            <point key="canvasLocation" x="128.98550724637681" y="103.79464285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="biometridID" width="70" height="70"/>
+        <image name="isotipo" width="128" height="126"/>
+    </resources>
+</document>

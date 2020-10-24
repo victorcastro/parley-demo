@@ -1,0 +1,44 @@
+PODS:
+  - FontAwesome.swift (1.9.0)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - SinchVerification (2.0.6)
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - FontAwesome.swift
+  - NVActivityIndicatorView
+  - RxCocoa (~> 5)
+  - RxSwift (~> 5)
+  - SinchVerification
+  - SnapKit (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - FontAwesome.swift
+    - NVActivityIndicatorView
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SinchVerification
+    - SnapKit
+
+SPEC CHECKSUMS:
+  FontAwesome.swift: a403b88cec950511745ba8f2decd1b6a07346d13
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SinchVerification: 3bf62ff2d57eb10ecc27796ce9736c786644fe23
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: c3ca1a5ce5a4b56af8608c2cddde5cb1632de8ec
+
+COCOAPODS: 1.9.3
