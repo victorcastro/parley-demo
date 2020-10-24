@@ -1,4 +1,4 @@
 # parley App - demo UI
 App demo workflow real app
 
-![ScreenShot](https://raw.github.com/victorcastro/parleyc-demo/master/preview.png)
+![ScreenShot](https://raw.github.com/victorcastro/parley-demo/master/preview.png)
